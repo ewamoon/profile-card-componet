@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="stylesheet" href="normalise.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@100..900,300&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
     />
 
     <title>Frontend Mentor | Profile card component</title>
@@ -17,23 +18,30 @@
     <main>
       <div class="user-card">
         <div class="info">
-          <img src="./images/image-victor.jpg" alt="Portrait of Victor Crest" />
-          <h1 class="user-name">Victor Crest <span class="age">26</span></h1>
-          <p>London</p>
+          <img
+            class="img-info"
+            src="./images/image-victor.jpg"
+            alt="Portrait of Victor Crest"
+          />
         </div>
+        <div class="user-info">
+          <h1 class="user-name">Victor Crest <span class="age">26</span></h1>
+          <p class="london">London</p>
 
-        <hr class="line">
-        <ul class="counter-list">
-          <li class="followers">
-            <span class="numbers">80K</span> <span class="text">Followers</span>
-          </li>
-          <li class="likes">
-            <span class="numbers">803K</span> <span class="text">Likes</span>
-          </li>
-          <li class="photos">
-            <span class="numbers">1.4K</span> <span class="text">Photos</span>
-          </li>
-        </ul>
+          <hr class="line" />
+          <ul class="counter-list">
+            <li class="followers">
+              <span class="numbers">80K</span>
+              <span class="text">Followers</span>
+            </li>
+            <li class="likes">
+              <span class="numbers">803K</span> <span class="text">Likes</span>
+            </li>
+            <li class="photos">
+              <span class="numbers">1.4K</span> <span class="text">Photos</span>
+            </li>
+          </ul>
+        </div>
       </div>
     </main>
     <footer class="attribution">
